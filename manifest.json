@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Link annotations",
+  "description": "This extension lets you add annotations to links on google search results",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com.br/*"],
+      "js": ["jquery-2.2.0.min.js", "note.js"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://www.google.com.br/*"
+  ],
+
+  "web_accessible_resources": [
+    "img/*"
+  ]
+}
