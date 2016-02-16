@@ -16,7 +16,8 @@
   "permissions": [
     "activeTab",
     "tabs",
-    "https://www.google.com.br/*"
+    "https://www.google.com.br/*",
+     "storage"
   ],
 
   "web_accessible_resources": [
